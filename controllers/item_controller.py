@@ -8,3 +8,13 @@ def create_item():
     data['items'].append(new_item)
     write_json(data)
     return jsonify(new_item), 201
+
+def update_item(item_id):
+    data = read_json()
+    updated_item = request.json
+    for item in data['items']:
+        if item['id'] == item_id:
+            item.update(updated_item)
+            write_json(data)
+            return jsonify(item)
+    return jsonify({'error': 'Item not found'}), 404
