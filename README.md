@@ -1,4 +1,4 @@
-# CRUD API com Flask e Banco de Dados JSON
+# API com Flask
 
 Este projeto implementa uma API básica de CRUD (Create, Read, Update, Delete) utilizando Flask como framework backend e um arquivo JSON como banco de dados temporário.
 
