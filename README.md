@@ -6,7 +6,7 @@ Este projeto implementa uma API básica de CRUD (Create, Read, Update, Delete) u
 
 <div style="display: flex; flex-direction: row;">
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="images/pyhton.png" alt="Logo Linguagem" width="100"/>
+    <img src="images/python.png" alt="Logo Linguagem" width="150"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
     <img src="images/flask.png" alt="Logo Linguagem" width="100"/>
