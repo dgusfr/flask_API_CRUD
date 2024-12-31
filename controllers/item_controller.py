@@ -1,6 +1,10 @@
 from flask import request, jsonify
 from services.json_service import read_json, write_json
 
+def get_items():
+    data = read_json()
+    return jsonify(data['items'])
+
 def create_item():
     data = read_json()
     new_item = request.json
