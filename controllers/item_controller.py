@@ -22,3 +22,9 @@ def update_item(item_id):
             write_json(data)
             return jsonify(item)
     return jsonify({'error': 'Item not found'}), 404
+
+def delete_item(item_id):
+    data = read_json()
+    data['items'] = [item for item in data['items'] if item['id'] != item_id]
+    write_json(data)
+    return jsonify({'message': 'Item deleted'}), 200
