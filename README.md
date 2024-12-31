@@ -9,7 +9,7 @@ Este projeto implementa uma API básica de CRUD (Create, Read, Update, Delete) u
     <img src="img/pyhton.png" alt="Logo Linguagem" width="100"/>
   </div>
   <div style="margin-right: 20px; display: flex; justify-content: flex-start;">
-    <img src="img/node.png" alt="Logo Linguagem" width="100"/>
+    <img src="img/flask.png" alt="Logo Linguagem" width="100"/>
   </div>
 </div>
 
