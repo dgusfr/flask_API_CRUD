@@ -1,0 +1,16 @@
+# Ambiente virtual
+venv/
+*.pyc
+*.pyo
+__pycache__/
+
+# Arquivos de banco de dados temporário
+database.json
+
+# Configurações do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações do editor de texto/IDE
+.vscode/
+.idea/
