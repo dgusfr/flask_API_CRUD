@@ -14,5 +14,9 @@ migrate = init_migrate(app)
 
 app.register_blueprint(item_routes)
 
+@app.route('/')
+def home():
+    return "API Flask funcionando! Acesse /items para listar os itens."
+
 if __name__ == '__main__':
     app.run(debug=True)
