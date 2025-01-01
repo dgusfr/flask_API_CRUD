@@ -27,8 +27,8 @@ crud_flask/
 │   ├── __init__.py           # Inicializador do módulo de controladores
 │   ├── item_controller.py    # Controlador para operações de CRUD
 ├── services/                 # Diretório com serviços auxiliares
-│   ├── __init__.py           # Inicializador do módulo de serviços
-│   ├── json_service.py       # Serviço para manipulação do arquivo JSON
+│   ├── __init__.py           
+│   ├── json_service.py       
 ├── tests/                    
 │   ├── __init__.py           
 │   ├── test_items.py         
