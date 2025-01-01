@@ -29,8 +29,8 @@ crud_flask/
 ├── services/                 # Diretório com serviços auxiliares
 │   ├── __init__.py           # Inicializador do módulo de serviços
 │   ├── json_service.py       # Serviço para manipulação do arquivo JSON
-├── tests/                    # Diretório para testes
-│   ├── __init__.py           # Inicializador do módulo de testes
+├── tests/                    
+│   ├── __init__.py           
 │   ├── test_items.py         
 ├── requirements.txt          
 ├── .gitignore                
