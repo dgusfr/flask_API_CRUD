@@ -23,8 +23,8 @@ crud_flask/
 ├── routes/                   
 │   ├── __init__.py           
 │   ├── item_routes.py        # Rotas relacionadas aos itens
-├── controllers/              # Diretório com os controladores
-│   ├── __init__.py           # Inicializador do módulo de controladores
+├── controllers/              
+│   ├── __init__.py           
 │   ├── item_controller.py    
 ├── services/                 
 │   ├── __init__.py           
