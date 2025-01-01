@@ -21,7 +21,7 @@ crud_flask/
 ├── app.py                   
 ├── database.json             
 ├── routes/                   
-│   ├── __init__.py           # Inicializador do módulo de rotas
+│   ├── __init__.py           
 │   ├── item_routes.py        # Rotas relacionadas aos itens
 ├── controllers/              # Diretório com os controladores
 │   ├── __init__.py           # Inicializador do módulo de controladores
@@ -29,9 +29,6 @@ crud_flask/
 ├── services/                 # Diretório com serviços auxiliares
 │   ├── __init__.py           # Inicializador do módulo de serviços
 │   ├── json_service.py       # Serviço para manipulação do arquivo JSON
-├── utils/                    # Diretório com utilitários
-│   ├── __init__.py           # Inicializador do módulo de utilitários
-│   ├── validators.py         # Validações para entradas de dados
 ├── tests/                    # Diretório para testes
 │   ├── __init__.py           # Inicializador do módulo de testes
 │   ├── test_items.py         # Testes para a API de itens
