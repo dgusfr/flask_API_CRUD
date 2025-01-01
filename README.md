@@ -19,8 +19,8 @@ Este projeto implementa uma API básica de CRUD (Create, Read, Update, Delete) u
 ```
 crud_flask/
 ├── app.py                   
-├── database.json             # Arquivo JSON usado como banco de dados temporário
-├── routes/                   # Diretório com as definições de rotas
+├── database.json             
+├── routes/                   
 │   ├── __init__.py           # Inicializador do módulo de rotas
 │   ├── item_routes.py        # Rotas relacionadas aos itens
 ├── controllers/              # Diretório com os controladores
