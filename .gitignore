@@ -4,13 +4,25 @@ venv/
 *.pyo
 __pycache__/
 
-# Arquivos de banco de dados temporário
-database.json
-
-# Configurações do sistema operacional
+# Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
 
-# Configurações do editor de texto/IDE
+# Configurações de IDEs/editores de texto
 .vscode/
 .idea/
+
+# Arquivos de migração gerados pelo Flask-Migrate
+migrations/
+
+# Configurações específicas do MySQL ou backups de banco
+*.sql
+*.db
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.swp
+
+# Credenciais e variáveis de ambiente
+.env
