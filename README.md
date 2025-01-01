@@ -33,8 +33,8 @@ crud_flask/
 │   ├── __init__.py           # Inicializador do módulo de testes
 │   ├── test_items.py         # Testes para a API de itens
 ├── requirements.txt          # Dependências do projeto
-├── .gitignore                # Arquivo para ignorar arquivos/diretórios no Git
-└── README.md                 # Documentação do projeto
+├── .gitignore                
+└── README.md                 
 ```
 
 ## Dependências
