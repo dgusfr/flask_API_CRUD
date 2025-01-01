@@ -22,7 +22,7 @@ crud_flask/
 ├── database.json             
 ├── routes/                   
 │   ├── __init__.py           
-│   ├── item_routes.py        # Rotas relacionadas aos itens
+│   ├── item_routes.py        
 ├── controllers/              
 │   ├── __init__.py           
 │   ├── item_controller.py    
