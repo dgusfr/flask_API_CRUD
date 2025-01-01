@@ -122,4 +122,4 @@ python -m unittest discover -s tests
 
 ## Autor
 
-Desenvolvido por Diego Franco
+Desenvolvido por Diego Franco.
