@@ -25,9 +25,10 @@ crud_flask/
 ├── routes/                   
 │   ├── __init__.py           
 │   ├── item_routes.py        
-├── controllers/              
-│   ├── __init__.py           
-│   ├── item_controller.py    
+├── controllers/                     
+│   ├── item_controller.py  
+├── models/                 
+│   ├── item.py              
 ├── services/                 
 │   ├── __init__.py           
 │   ├── json_service.py       
