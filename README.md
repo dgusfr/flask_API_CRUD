@@ -31,8 +31,8 @@ crud_flask/
 │   ├── json_service.py       # Serviço para manipulação do arquivo JSON
 ├── tests/                    # Diretório para testes
 │   ├── __init__.py           # Inicializador do módulo de testes
-│   ├── test_items.py         # Testes para a API de itens
-├── requirements.txt          # Dependências do projeto
+│   ├── test_items.py         
+├── requirements.txt          
 ├── .gitignore                
 └── README.md                 
 ```
