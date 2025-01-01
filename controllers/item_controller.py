@@ -1,4 +1,6 @@
+from flask import request, jsonify
 from models.item import Item
+from config.database import db
 
 def get_items():
     items = Item.query.all()
@@ -6,6 +8,8 @@ def get_items():
 
 def create_item():
     data = request.json
+    if not data or 'name' not in data:
+        return jsonify({'error': 'Invalid data'}), 400
     new_item = Item(name=data['name'])
     db.session.add(new_item)
     db.session.commit()
@@ -13,6 +17,8 @@ def create_item():
 
 def update_item(item_id):
     data = request.json
+    if not data or 'name' not in data:
+        return jsonify({'error': 'Invalid data'}), 400
     item = Item.query.get(item_id)
     if not item:
         return jsonify({'error': 'Item not found'}), 404
