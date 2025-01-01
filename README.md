@@ -123,3 +123,6 @@ python -m unittest discover -s tests
 ## Autor
 
 Desenvolvido por Diego Franco.
+
+<!-- venv\Scripts\activate
+deactivate -->
