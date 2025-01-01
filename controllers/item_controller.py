@@ -19,3 +19,11 @@ def update_item(item_id):
     item.name = data['name']
     db.session.commit()
     return jsonify({'id': item.id, 'name': item.name})
+
+def delete_item(item_id):
+    item = Item.query.get(item_id)
+    if not item:
+        return jsonify({'error': 'Item not found'}), 404
+    db.session.delete(item)
+    db.session.commit()
+    return jsonify({'message': 'Item deleted'}), 200
