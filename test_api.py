@@ -3,7 +3,7 @@ import requests
 URL = "http://127.0.0.1:5000/products"
 
 def list_products():
-    response = requests.get(BASE_URL)
+    response = requests.get(URL)
     if response.status_code == 200:
         products = response.json()
         if not products:
