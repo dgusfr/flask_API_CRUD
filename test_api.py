@@ -3,6 +3,9 @@ import requests
 URL = "http://127.0.0.1:5000/products"
 
 def list_products():
+    """
+    Lista todos os produtos disponíveis na API.
+    """
     response = requests.get(URL)
     if response.status_code == 200:
         products = response.json()
@@ -16,6 +19,9 @@ def list_products():
         print("Erro ao listar produtos:", response.status_code, response.text)
 
 def get_product_by_id(product_id):
+    """
+    Busca um produto específico pelo ID.
+    """
     response = requests.get(f"{URL}/{product_id}")
     if response.status_code == 200:
         product = response.json()
@@ -27,6 +33,9 @@ def get_product_by_id(product_id):
         return None
 
 def update_product(product_id, name=None, description=None, price=None, stock=None):
+    """
+    Atualiza os dados de um produto pelo ID.
+    """
     data = {
         "name": name,
         "description": description,
@@ -47,6 +56,9 @@ def update_product(product_id, name=None, description=None, price=None, stock=No
         print("Erro ao atualizar produto:", response.status_code, response.text)
 
 def create_product(name, description, price, stock):
+    """
+    Cria um novo produto.
+    """
     payload = {
         "name": name,
         "description": description,
@@ -58,3 +70,36 @@ def create_product(name, description, price, stock):
         print("Produto criado com sucesso:", response.json())
     else:
         print("Erro ao criar produto:", response.status_code, response.text)
+
+def delete_product(product_id):
+    """
+    Exclui um produto pelo ID.
+    """
+    response = requests.delete(f"{URL}/{product_id}")
+    if response.status_code == 200:
+        print("Produto excluído com sucesso.")
+    else:
+        print("Erro ao excluir produto:", response.status_code, response.text)
+
+if __name__ == "__main__":
+    # Testes
+    print("=== Listar produtos ===")
+    list_products()
+
+    print("\n=== Criar produto ===")
+    create_product("Cadeira Gamer", "Cadeira confortável para jogos", 599.99, 10)
+
+    print("\n=== Listar produtos ===")
+    list_products()
+
+    print("\n=== Atualizar produto ===")
+    update_product(1, name="Cadeira Gamer Premium", price=699.99)
+
+    print("\n=== Listar produtos ===")
+    list_products()
+
+    print("\n=== Excluir produto ===")
+    delete_product(1)
+
+    print("\n=== Listar produtos ===")
+    list_products()
