@@ -15,6 +15,17 @@ def list_products():
     else:
         print("Erro ao listar produtos:", response.status_code, response.text)
 
+def get_product_by_id(product_id):
+    response = requests.get(f"{BASE_URL}/{product_id}")
+    if response.status_code == 200:
+        product = response.json()
+        print("Produto encontrado:")
+        print(f"ID: {product['id']}, Nome: {product['name']}, Descrição: {product['description']}, Preço: {product['price']}, Estoque: {product['stock']}")
+        return product
+    else:
+        print("Erro ao buscar produto:", response.status_code, response.text)
+        return None
+
 
 def create_product(name, description, price, stock):
     payload = {
