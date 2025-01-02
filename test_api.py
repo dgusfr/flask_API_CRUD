@@ -48,7 +48,7 @@ def create_product(name, description, price, stock):
         "price": price,
         "stock": stock
     }
-    response = requests.post(BASE_URL, json=payload)
+    response = requests.post(URL, json=payload)
     if response.status_code == 201:
         print("Produto criado com sucesso:", response.json())
     else:
