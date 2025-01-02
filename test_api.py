@@ -27,13 +27,18 @@ def get_product_by_id(product_id):
         return None
 
 def update_product(product_id, name=None, description=None, price=None, stock=None):
-    # Dados a serem atualizados, ignorando campos não fornecidos
-    payload = {key: value for key, value in {
+    data = {
         "name": name,
         "description": description,
         "price": price,
         "stock": stock
-    }.items() if value is not None}
+    }
+
+    # Filtrar campos com valores válidos
+    payload = {}
+    for key, value in data.items():
+        if value is not None:
+            payload[key] = value
 
     response = requests.put(f"{URL}/{product_id}", json=payload)
     if response.status_code == 200:
