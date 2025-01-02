@@ -16,7 +16,7 @@ def list_products():
         print("Erro ao listar produtos:", response.status_code, response.text)
 
 def get_product_by_id(product_id):
-    response = requests.get(f"{BASE_URL}/{product_id}")
+    response = requests.get(f"{URL}/{product_id}")
     if response.status_code == 200:
         product = response.json()
         print("Produto encontrado:")
@@ -35,7 +35,7 @@ def update_product(product_id, name=None, description=None, price=None, stock=No
         "stock": stock
     }.items() if value is not None}
 
-    response = requests.put(f"{BASE_URL}/{product_id}", json=payload)
+    response = requests.put(f"{URL}/{product_id}", json=payload)
     if response.status_code == 200:
         print("Produto atualizado com sucesso:", response.json())
     else:
