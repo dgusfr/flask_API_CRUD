@@ -10,3 +10,16 @@ def list_products():
       print(f"- ID: {product['id']}, Nome: {product['name']}, Estoque: {product['stock']}")
     else:
       print("Erro ao listar produtos:", response.status_code, response.text)
+
+def create_product(name, description, price, stock):
+    payload = {
+        "name": name,
+        "description": description,
+        "price": price,
+        "stock": stock
+    }
+    response = requests.post(BASE_URL, json=payload)
+    if response.status_code == 201:
+        print("Produto criado com sucesso:", response.json())
+    else:
+        print("Erro ao criar produto:", response.status_code, response.text)
