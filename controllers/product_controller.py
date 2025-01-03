@@ -17,7 +17,11 @@ class ProductController:
         return jsonify({"error": "Product not found"}), 404
 
     @staticmethod
-    def create_product(data):
+    def create_product():
+        data = request.get_json()  
+        if not data or not all(key in data for key in ['name', 'price', 'stock']):
+            return jsonify({'error': 'Invalid data'}), 400
+
         new_product = Product(
             name=data['name'],
             description=data.get('description', ''),
