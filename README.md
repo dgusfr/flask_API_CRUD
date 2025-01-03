@@ -134,7 +134,7 @@ Notebook de alta performance
 5
 
 Cadeira Gamer
-Descrição: Cadeira ergonômica para gamers
+Cadeira ergonômica para gamers
 Preço: 699.99
 Estoque: 10
 Exemplo 3: Monitor Ultrawide
