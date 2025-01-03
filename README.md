@@ -133,7 +133,7 @@ Notebook de alta performance
 4500.00
 5
 
-Exemplo 2: Cadeira Gamer
+Cadeira Gamer
 Nome: Cadeira Gamer
 Descrição: Cadeira ergonômica para gamers
 Preço: 699.99
