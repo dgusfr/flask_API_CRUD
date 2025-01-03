@@ -136,7 +136,7 @@ Notebook de alta performance
 Cadeira Gamer
 Cadeira ergonômica para gamers
 699.99
-Estoque: 10
+10
 Exemplo 3: Monitor Ultrawide
 Nome: Monitor Ultrawide
 Descrição: Monitor 34" para multitarefa
