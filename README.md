@@ -124,5 +124,29 @@ python -m unittest discover -s tests
 
 Desenvolvido por Diego Franco.
 
-<!-- venv\Scripts\activate
-deactivate -->
+<!-- 
+venv\Scripts\activate
+deactivate
+
+Notebook Dell
+Notebook de alta performance
+4500.00
+5
+
+Exemplo 2: Cadeira Gamer
+Nome: Cadeira Gamer
+Descrição: Cadeira ergonômica para gamers
+Preço: 699.99
+Estoque: 10
+Exemplo 3: Monitor Ultrawide
+Nome: Monitor Ultrawide
+Descrição: Monitor 34" para multitarefa
+Preço: 1299.99
+Estoque: 7
+Exemplo 4: Teclado Mecânico
+Nome: Teclado Mecânico
+Descrição: Teclado com switches azuis
+Preço: 349.99
+Estoque: 15
+
+ -->
