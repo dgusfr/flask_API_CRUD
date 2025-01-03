@@ -140,7 +140,7 @@ Cadeira ergonômica para gamers
 
 Monitor Ultrawide
 Monitor 34" para multitarefa
-Preço: 1299.99
+1299.99
 Estoque: 7
 Exemplo 4: Teclado Mecânico
 Nome: Teclado Mecânico
