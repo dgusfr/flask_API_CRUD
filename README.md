@@ -139,7 +139,7 @@ Cadeira ergonômica para gamers
 10
 
 Monitor Ultrawide
-Descrição: Monitor 34" para multitarefa
+Monitor 34" para multitarefa
 Preço: 1299.99
 Estoque: 7
 Exemplo 4: Teclado Mecânico
