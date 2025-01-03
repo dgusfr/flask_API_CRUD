@@ -144,7 +144,6 @@ Monitor 34" para multitarefa
 7
 
 Teclado Mecânico
-Nome: Teclado Mecânico
 Descrição: Teclado com switches azuis
 Preço: 349.99
 Estoque: 15
