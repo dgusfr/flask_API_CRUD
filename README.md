@@ -142,7 +142,8 @@ Monitor Ultrawide
 Monitor 34" para multitarefa
 1299.99
 7
-Exemplo 4: Teclado Mecânico
+
+Teclado Mecânico
 Nome: Teclado Mecânico
 Descrição: Teclado com switches azuis
 Preço: 349.99
