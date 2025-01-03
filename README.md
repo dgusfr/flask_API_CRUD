@@ -134,7 +134,6 @@ Notebook de alta performance
 5
 
 Cadeira Gamer
-Cadeira Gamer
 Descrição: Cadeira ergonômica para gamers
 Preço: 699.99
 Estoque: 10
