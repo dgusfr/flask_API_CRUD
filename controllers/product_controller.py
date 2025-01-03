@@ -1,6 +1,5 @@
-from flask import request, jsonify
+from flask import jsonify
 from models.product import Product
-from config.database import db
 
 class ProductController:
 
@@ -10,11 +9,14 @@ class ProductController:
         return jsonify([product.to_dict() for product in products])
 
     @staticmethod
-    def create_product():
-        data = request.json
-        if not data or not all(key in data for key in ['name', 'price', 'stock']):
-            return jsonify({'error': 'Invalid data'}), 400
+    def get_product_by_id(product_id):
+        product = Product.query.get(product_id)
+        if product:
+            return jsonify(product.to_dict())
+        return jsonify({"error": "Product not found"}), 404
 
+    @staticmethod
+    def create_product(data):
         new_product = Product(
             name=data['name'],
             description=data.get('description', ''),
@@ -26,12 +28,10 @@ class ProductController:
         return jsonify(new_product.to_dict()), 201
 
     @staticmethod
-    def update_product(product_id):
-        data = request.json
+    def update_product(product_id, data):
         product = Product.query.get(product_id)
         if not product:
-            return jsonify({'error': 'Product not found'}), 404
-
+            return jsonify({"error": "Product not found"}), 404
         product.name = data.get('name', product.name)
         product.description = data.get('description', product.description)
         product.price = data.get('price', product.price)
@@ -43,8 +43,7 @@ class ProductController:
     def delete_product(product_id):
         product = Product.query.get(product_id)
         if not product:
-            return jsonify({'error': 'Product not found'}), 404
-
+            return jsonify({"error": "Product not found"}), 404
         db.session.delete(product)
         db.session.commit()
-        return jsonify({'message': 'Product deleted'}), 200
+        return jsonify({"message": "Product deleted"}), 200
