@@ -1,5 +1,6 @@
 from flask import jsonify
 from models.product import Product
+from config.database import db
 
 class ProductController:
 
