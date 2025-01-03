@@ -145,7 +145,7 @@ Monitor 34" para multitarefa
 
 Teclado Mecânico
 Teclado com switches azuis
-Preço: 349.99
+349.99
 Estoque: 15
 
  -->
