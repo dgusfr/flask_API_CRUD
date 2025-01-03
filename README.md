@@ -141,7 +141,7 @@ Cadeira ergonômica para gamers
 Monitor Ultrawide
 Monitor 34" para multitarefa
 1299.99
-Estoque: 7
+7
 Exemplo 4: Teclado Mecânico
 Nome: Teclado Mecânico
 Descrição: Teclado com switches azuis
