@@ -128,6 +128,8 @@ Desenvolvido por Diego Franco.
 venv\Scripts\activate
 deactivate
 
+____
+
 Notebook Dell
 Notebook de alta performance
 4500.00
@@ -147,4 +149,4 @@ Teclado Mecânico
 Teclado com switches azuis
 349.99
 15
- -->
+-->
