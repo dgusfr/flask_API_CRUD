@@ -1,9 +1,8 @@
-from flask import request, jsonify
+from flask import jsonify
 from models.product import Product
 from config.database import db
 
 class ProductController:
-
     @staticmethod
     def get_products():
         products = Product.query.all()
@@ -17,11 +16,7 @@ class ProductController:
         return jsonify({"error": "Product not found"}), 404
 
     @staticmethod
-    def create_product():
-        data = request.get_json()  
-        if not data or not all(key in data for key in ['name', 'price', 'stock']):
-            return jsonify({'error': 'Invalid data'}), 400
-
+    def create_product(data):
         new_product = Product(
             name=data['name'],
             description=data.get('description', ''),
