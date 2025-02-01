@@ -120,33 +120,36 @@ python -m unittest discover -s tests
 - Implementar paginação nas listagens de itens.  
 - Documentar a API usando Swagger ou outra ferramenta.
 
+---
+
+## **APIs e Requisições HTTP**
+
+### **Conceitos de API**
+- **GET**: Recupera dados.
+- **POST**: Envia novos dados.
+- **PUT**: Atualiza dados existentes.
+- **DELETE**: Remove dados.
+
+### **Consumindo APIs com `requests`**
+```python
+import requests
+
+resposta = requests.get("https://jsonplaceholder.typicode.com/posts")
+print(resposta.json())
+```
+
+### **JSON e Serialização**
+```python
+import json
+
+dados = {"nome": "João", "idade": 30}
+json_string = json.dumps(dados)
+print(json_string)  # Saída: {"nome": "João", "idade": 30}
+```
+---
+
 ## Autor
 
 Desenvolvido por Diego Franco.
 
-<!-- 
-venv\Scripts\activate
-deactivate
 
-____
-
-Notebook Dell
-Notebook de alta performance
-4500.00
-5
-
-Cadeira Gamer
-Cadeira ergonômica para gamers
-699.99
-10
-
-Monitor Ultrawide
-Monitor 34" para multitarefa
-1299.99
-7
-
-Teclado Mecânico
-Teclado com switches azuis
-349.99
-15
--->
